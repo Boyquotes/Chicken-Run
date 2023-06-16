@@ -7,37 +7,15 @@
 
 [node name="Level1" type="Node2D"]
 
-[node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 446, 494 )
-
-[node name="TileMap" type="TileMap" parent="."]
-tile_set = ExtResource( 1 )
-cell_size = Vector2( 32, 32 )
-format = 1
-tile_data = PoolIntArray( 327692, 3, 0, 327693, 4, 0, 327694, 4, 0, 327695, 5, 0, 458750, 1, 0, 393216, 3, 0, 393217, 4, 0, 393218, 4, 0, 393219, 4, 0, 393220, 4, 0, 393221, 5, 0, 393226, 1, 0, 393228, 6, 0, 393229, 7, 0, 393230, 7, 0, 393231, 8, 0, 393233, 1, 0, 393238, 3, 0, 393239, 4, 0, 393240, 4, 0, 393241, 4, 0, 393242, 4, 0, 393243, 5, 0, 393245, 1, 0, 458752, 6, 0, 458753, 7, 0, 458754, 7, 0, 458755, 7, 0, 458756, 7, 0, 458757, 8, 0, 458760, 1, 0, 458771, 1, 0, 458774, 6, 0, 458775, 7, 0, 458776, 7, 0, 458777, 7, 0, 458778, 7, 0, 458779, 8, 0, 589820, 1, 0, 524319, 1, 0, 720894, 1, 0, 655389, 1, 0, 786432, 3, 0, 786433, 4, 0, 786434, 4, 0, 786435, 4, 0, 786436, 4, 0, 786437, 4, 0, 786438, 5, 0, 786453, 3, 0, 786454, 4, 0, 786455, 4, 0, 786456, 4, 0, 786457, 4, 0, 786458, 4, 0, 786459, 5, 0, 851968, 6, 0, 851969, 7, 0, 851970, 7, 0, 851971, 7, 0, 851972, 7, 0, 851973, 7, 0, 851974, 8, 0, 851976, 1, 0, 851987, 1, 0, 851989, 6, 0, 851990, 7, 0, 851991, 7, 0, 851992, 7, 0, 851993, 7, 0, 851994, 7, 0, 851995, 8, 0, 917514, 1, 0, 917521, 1, 0, 983047, 0, 0, 983060, 0, 0, 1048576, 3, 0, 1048577, 4, 0, 1048578, 4, 0, 1048579, 4, 0, 1048580, 4, 0, 1048581, 4, 0, 1048582, 4, 0, 1048583, 4, 0, 1048584, 4, 0, 1048585, 4, 0, 1048586, 4, 0, 1048587, 4, 0, 1048588, 4, 0, 1048589, 4, 0, 1048590, 4, 0, 1048591, 4, 0, 1048592, 4, 0, 1048593, 4, 0, 1048594, 4, 0, 1048595, 4, 0, 1048596, 4, 0, 1048597, 4, 0, 1048598, 4, 0, 1048599, 4, 0, 1048600, 4, 0, 1048601, 4, 0, 1048602, 4, 0, 1048603, 5, 0, 1114112, 6, 0, 1114113, 7, 0, 1114114, 7, 0, 1114115, 7, 0, 1114116, 7, 0, 1114117, 7, 0, 1114118, 7, 0, 1114119, 7, 0, 1114120, 7, 0, 1114121, 7, 0, 1114122, 7, 0, 1114123, 7, 0, 1114124, 7, 0, 1114125, 7, 0, 1114126, 7, 0, 1114127, 7, 0, 1114128, 7, 0, 1114129, 7, 0, 1114130, 7, 0, 1114131, 7, 0, 1114132, 7, 0, 1114133, 7, 0, 1114134, 7, 0, 1114135, 7, 0, 1114136, 7, 0, 1114137, 7, 0, 1114138, 7, 0, 1114139, 8, 0 )
-
-[node name="Spikes" parent="." instance=ExtResource( 3 )]
-position = Vector2( 177, 496 )
-
-[node name="Spikes2" parent="." instance=ExtResource( 3 )]
-position = Vector2( 717, 498 )
-
-[node name="Key1" parent="." instance=ExtResource( 4 )]
-position = Vector2( 270, 208 )
-
-[node name="Key2" parent="." instance=ExtResource( 4 )]
-position = Vector2( 90, 494 )
-
-[node name="Key3" parent="." instance=ExtResource( 4 )]
-position = Vector2( 906, 68 )
-
 [node name="Tutorial1" type="Label" parent="."]
-margin_left = 370.0
-margin_top = 397.0
-margin_right = 548.0
-margin_bottom = 477.0
+margin_left = 367.0
+margin_top = 387.0
+margin_right = 545.0
+margin_bottom = 486.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "Welcome! WASD, Arrow keys or (for mobile) joystick to move. Your aim is to find all three keys. Good luck!"
+text = "Welcome! WASD, Arrow keys or (for mobile) joystick to move. 
+
+<--- Go this way"
 autowrap = true
 
 [node name="Tutorial2" type="Label" parent="."]
@@ -75,6 +53,48 @@ margin_bottom = 744.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "drink milk not orange juice gamers!"
 autowrap = true
+
+[node name="Tutorial6" type="Label" parent="."]
+margin_left = 42.0
+margin_top = 330.0
+margin_right = 203.0
+margin_bottom = 378.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Your objective is to find the three keys hidden in this map."
+autowrap = true
+
+[node name="Tutorial7" type="Label" parent="."]
+margin_left = 219.0
+margin_top = 165.0
+margin_right = 380.0
+margin_bottom = 213.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "It's another key!"
+autowrap = true
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 446, 494 )
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 32, 32 )
+format = 1
+tile_data = PoolIntArray( 327692, 3, 0, 327693, 4, 0, 327694, 4, 0, 327695, 5, 0, 458750, 1, 0, 393216, 3, 0, 393217, 4, 0, 393218, 4, 0, 393219, 4, 0, 393220, 4, 0, 393221, 5, 0, 393226, 1, 0, 393228, 6, 0, 393229, 7, 0, 393230, 7, 0, 393231, 8, 0, 393233, 1, 0, 393238, 3, 0, 393239, 4, 0, 393240, 4, 0, 393241, 4, 0, 393242, 4, 0, 393243, 5, 0, 393245, 1, 0, 458752, 6, 0, 458753, 7, 0, 458754, 7, 0, 458755, 7, 0, 458756, 7, 0, 458757, 8, 0, 458760, 1, 0, 458771, 1, 0, 458774, 6, 0, 458775, 7, 0, 458776, 7, 0, 458777, 7, 0, 458778, 7, 0, 458779, 8, 0, 589820, 1, 0, 524319, 1, 0, 720894, 1, 0, 655389, 1, 0, 786432, 3, 0, 786433, 4, 0, 786434, 4, 0, 786435, 4, 0, 786436, 4, 0, 786437, 4, 0, 786438, 5, 0, 786453, 3, 0, 786454, 4, 0, 786455, 4, 0, 786456, 4, 0, 786457, 4, 0, 786458, 4, 0, 786459, 5, 0, 851968, 6, 0, 851969, 7, 0, 851970, 7, 0, 851971, 7, 0, 851972, 7, 0, 851973, 7, 0, 851974, 8, 0, 851976, 1, 0, 851987, 1, 0, 851989, 6, 0, 851990, 7, 0, 851991, 7, 0, 851992, 7, 0, 851993, 7, 0, 851994, 7, 0, 851995, 8, 0, 917514, 1, 0, 917521, 1, 0, 983047, 0, 0, 983060, 0, 0, 1048576, 3, 0, 1048577, 4, 0, 1048578, 4, 0, 1048579, 4, 0, 1048580, 4, 0, 1048581, 4, 0, 1048582, 4, 0, 1048583, 4, 0, 1048584, 4, 0, 1048585, 4, 0, 1048586, 4, 0, 1048587, 4, 0, 1048588, 4, 0, 1048589, 4, 0, 1048590, 4, 0, 1048591, 4, 0, 1048592, 4, 0, 1048593, 4, 0, 1048594, 4, 0, 1048595, 4, 0, 1048596, 4, 0, 1048597, 4, 0, 1048598, 4, 0, 1048599, 4, 0, 1048600, 4, 0, 1048601, 4, 0, 1048602, 4, 0, 1048603, 5, 0, 1114112, 6, 0, 1114113, 7, 0, 1114114, 7, 0, 1114115, 7, 0, 1114116, 7, 0, 1114117, 7, 0, 1114118, 7, 0, 1114119, 7, 0, 1114120, 7, 0, 1114121, 7, 0, 1114122, 7, 0, 1114123, 7, 0, 1114124, 7, 0, 1114125, 7, 0, 1114126, 7, 0, 1114127, 7, 0, 1114128, 7, 0, 1114129, 7, 0, 1114130, 7, 0, 1114131, 7, 0, 1114132, 7, 0, 1114133, 7, 0, 1114134, 7, 0, 1114135, 7, 0, 1114136, 7, 0, 1114137, 7, 0, 1114138, 7, 0, 1114139, 8, 0 )
+
+[node name="Spikes" parent="." instance=ExtResource( 3 )]
+position = Vector2( 177, 496 )
+
+[node name="Spikes2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 717, 498 )
+
+[node name="Key1" parent="." instance=ExtResource( 4 )]
+position = Vector2( 270, 208 )
+
+[node name="Key2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 90, 494 )
+
+[node name="Key3" parent="." instance=ExtResource( 4 )]
+position = Vector2( 906, 68 )
 
 [connection signal="body_entered" from="Spikes" to="Player" method="onSpikesCollision"]
 [connection signal="body_entered" from="Spikes2" to="Player" method="onSpikesCollision"]

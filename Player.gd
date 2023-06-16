@@ -134,7 +134,15 @@ func findsKey3(_body):
 		get_node("../Key3").hide()
 		get_node("/root/Game/HUD/KeysLabel").text = "Keys Found: " + String(numOfKeys) + "/3"
 	
+	
+#Jump Pad
 
+func onJumpPadCollision(_body):
+	motion.y = -650
+	$JumpSoundPlayer.play()
+	canDoubleJump = true
+
+#Death Timer
 func _on_DeathFlashTimer_timeout():
 	dead = false
 	position = startPos

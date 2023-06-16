@@ -1,20 +1,21 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Key.tscn" type="PackedScene" id=2]
 [ext_resource path="res://grass_tileset.tres" type="TileSet" id=3]
 [ext_resource path="res://Spikes.tscn" type="PackedScene" id=4]
+[ext_resource path="res://JumpPad.tscn" type="PackedScene" id=5]
 
 [node name="Level2" type="Node2D"]
 
 [node name="Key1" parent="." instance=ExtResource( 2 )]
-position = Vector2( 626, 269 )
+position = Vector2( 1737, 63 )
 
 [node name="Key2" parent="." instance=ExtResource( 2 )]
 position = Vector2( 1053, 304 )
 
 [node name="Key3" parent="." instance=ExtResource( 2 )]
-position = Vector2( 300, 258 )
+position = Vector2( 2019, 254 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 477, 274 )
@@ -23,7 +24,7 @@ position = Vector2( 477, 274 )
 tile_set = ExtResource( 3 )
 cell_size = Vector2( 32, 32 )
 format = 1
-tile_data = PoolIntArray( 131121, 6, 0, 131122, 7, 0, 131123, 8, 0, 262172, 3, 0, 262173, 4, 0, 262174, 4, 0, 262175, 4, 0, 262176, 4, 0, 262177, 5, 0, 327706, 1, 0, 327708, 6, 0, 327709, 7, 0, 327710, 7, 0, 327711, 7, 0, 327712, 7, 0, 327713, 8, 0, 393251, 1, 0, 393262, 1, 0, 393265, 6, 0, 393266, 7, 0, 393267, 8, 0, 458774, 3, 0, 458775, 4, 0, 458776, 5, 0, 458789, 1, 0, 458796, 1, 0, 524310, 6, 0, 524311, 7, 0, 524312, 8, 0, 524330, 1, 0, 589833, 3, 0, 589834, 4, 0, 589835, 4, 0, 589836, 4, 0, 589837, 4, 0, 589838, 4, 0, 589839, 4, 0, 589840, 4, 0, 589841, 4, 0, 589842, 4, 0, 589843, 5, 0, 589850, 1, 0, 589859, 3, 0, 589860, 4, 0, 589861, 4, 0, 589862, 4, 0, 589863, 4, 0, 589864, 5, 0, 589871, 3, 0, 589872, 4, 0, 589873, 4, 0, 589874, 4, 0, 589875, 4, 0, 589876, 5, 0, 655369, 6, 0, 655370, 7, 0, 655371, 7, 0, 655372, 7, 0, 655373, 7, 0, 655374, 7, 0, 655375, 7, 0, 655376, 7, 0, 655377, 7, 0, 655378, 7, 0, 655379, 8, 0, 655388, 3, 0, 655389, 4, 0, 655390, 4, 0, 655391, 4, 0, 655392, 4, 0, 655393, 5, 0, 655395, 6, 0, 655396, 7, 0, 655397, 7, 0, 655398, 7, 0, 655399, 7, 0, 655400, 8, 0, 655407, 6, 0, 655408, 7, 0, 655409, 7, 0, 655410, 7, 0, 655411, 7, 0, 655412, 8, 0, 720924, 6, 0, 720925, 7, 0, 720926, 7, 0, 720927, 7, 0, 720928, 7, 0, 720929, 8, 0 )
+tile_data = PoolIntArray( 131121, 6, 0, 131122, 7, 0, 131123, 8, 0, 196640, 0, 0, 262172, 3, 0, 262173, 4, 0, 262174, 4, 0, 262175, 4, 0, 262176, 4, 0, 262177, 5, 0, 327706, 1, 0, 327708, 6, 0, 327709, 7, 0, 327710, 7, 0, 327711, 7, 0, 327712, 7, 0, 327713, 8, 0, 393251, 1, 0, 393260, 0, 0, 393262, 1, 0, 393265, 6, 0, 393266, 7, 0, 393267, 8, 0, 393275, 6, 0, 393276, 7, 0, 393277, 8, 0, 458774, 3, 0, 458775, 4, 0, 458776, 5, 0, 458789, 1, 0, 458796, 1, 0, 524303, 2, 0, 524306, 0, 0, 524310, 6, 0, 524311, 7, 0, 524312, 8, 0, 524323, 0, 0, 524330, 1, 0, 524338, 2, 0, 589833, 3, 0, 589834, 4, 0, 589835, 4, 0, 589836, 4, 0, 589837, 4, 0, 589838, 4, 0, 589839, 4, 0, 589840, 4, 0, 589841, 4, 0, 589842, 4, 0, 589843, 5, 0, 589850, 1, 0, 589853, 2, 0, 589859, 3, 0, 589860, 4, 0, 589861, 4, 0, 589862, 4, 0, 589863, 4, 0, 589864, 5, 0, 589871, 3, 0, 589872, 4, 0, 589873, 4, 0, 589874, 4, 0, 589875, 4, 0, 589876, 5, 0, 589879, 3, 0, 589880, 4, 0, 589881, 5, 0, 589883, 6, 0, 589884, 7, 0, 589885, 8, 0, 655369, 6, 0, 655370, 7, 0, 655371, 7, 0, 655372, 7, 0, 655373, 7, 0, 655374, 7, 0, 655375, 7, 0, 655376, 7, 0, 655377, 7, 0, 655378, 7, 0, 655379, 8, 0, 655388, 3, 0, 655389, 4, 0, 655390, 4, 0, 655391, 4, 0, 655392, 4, 0, 655393, 5, 0, 655395, 6, 0, 655396, 7, 0, 655397, 7, 0, 655398, 7, 0, 655399, 7, 0, 655400, 8, 0, 655407, 6, 0, 655408, 7, 0, 655409, 7, 0, 655410, 7, 0, 655411, 7, 0, 655412, 8, 0, 655415, 6, 0, 655416, 7, 0, 655417, 8, 0, 720924, 6, 0, 720925, 7, 0, 720926, 7, 0, 720927, 7, 0, 720928, 7, 0, 720929, 8, 0 )
 
 [node name="Spikes" parent="." instance=ExtResource( 4 )]
 position = Vector2( 1616, 177 )
@@ -31,8 +32,56 @@ position = Vector2( 1616, 177 )
 [node name="Spikes2" parent="." instance=ExtResource( 4 )]
 position = Vector2( 1616, 49 )
 
+[node name="Spikes3" parent="." instance=ExtResource( 4 )]
+position = Vector2( 943, 304 )
+
+[node name="Spikes4" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1936, 179 )
+
+[node name="JumpPad" parent="." instance=ExtResource( 5 )]
+position = Vector2( 1677, 270 )
+
+[node name="Tutorial1" type="Label" parent="."]
+margin_left = 1443.0
+margin_top = 244.0
+margin_right = 1667.0
+margin_bottom = 315.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "You can jump higher than usual by making contact with this yellow jump pad!"
+autowrap = true
+
+[node name="Tutorial2" type="Label" parent="."]
+margin_left = 1757.0
+margin_top = 62.0
+margin_right = 1871.0
+margin_bottom = 150.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Almost there! Double Jump!"
+autowrap = true
+
+[node name="Tutorial3" type="Label" parent="."]
+margin_left = 1144.0
+margin_top = 559.0
+margin_right = 1361.0
+margin_bottom = 589.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "never gonna give you up"
+autowrap = true
+
+[node name="Tutorial4" type="Label" parent="."]
+margin_left = 380.0
+margin_top = 191.0
+margin_right = 597.0
+margin_bottom = 221.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "There are three keys hidden on this map as well! Hint... go that way -->"
+autowrap = true
+
 [connection signal="body_entered" from="Key1" to="Player" method="findsKey1"]
 [connection signal="body_entered" from="Key2" to="Player" method="findsKey2"]
 [connection signal="body_entered" from="Key3" to="Player" method="findsKey3"]
 [connection signal="body_entered" from="Spikes" to="Player" method="onSpikesCollision"]
 [connection signal="body_entered" from="Spikes2" to="Player" method="onSpikesCollision"]
+[connection signal="body_entered" from="Spikes3" to="Player" method="onSpikesCollision"]
+[connection signal="body_entered" from="Spikes4" to="Player" method="onSpikesCollision"]
+[connection signal="body_entered" from="JumpPad" to="Player" method="onJumpPadCollision"]
