@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Key.tscn" type="PackedScene" id=2]
+[ext_resource path="res://grass_tileset.tres" type="TileSet" id=3]
+[ext_resource path="res://Spikes.tscn" type="PackedScene" id=4]
+
+[node name="Level2" type="Node2D"]
+
+[node name="Key1" parent="." instance=ExtResource( 2 )]
+position = Vector2( 626, 269 )
+
+[node name="Key2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1053, 304 )
+
+[node name="Key3" parent="." instance=ExtResource( 2 )]
+position = Vector2( 300, 258 )
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 477, 274 )
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 3 )
+cell_size = Vector2( 32, 32 )
+format = 1
+tile_data = PoolIntArray( 131121, 6, 0, 131122, 7, 0, 131123, 8, 0, 262172, 3, 0, 262173, 4, 0, 262174, 4, 0, 262175, 4, 0, 262176, 4, 0, 262177, 5, 0, 327706, 1, 0, 327708, 6, 0, 327709, 7, 0, 327710, 7, 0, 327711, 7, 0, 327712, 7, 0, 327713, 8, 0, 393251, 1, 0, 393262, 1, 0, 393265, 6, 0, 393266, 7, 0, 393267, 8, 0, 458774, 3, 0, 458775, 4, 0, 458776, 5, 0, 458789, 1, 0, 458796, 1, 0, 524310, 6, 0, 524311, 7, 0, 524312, 8, 0, 524330, 1, 0, 589833, 3, 0, 589834, 4, 0, 589835, 4, 0, 589836, 4, 0, 589837, 4, 0, 589838, 4, 0, 589839, 4, 0, 589840, 4, 0, 589841, 4, 0, 589842, 4, 0, 589843, 5, 0, 589850, 1, 0, 589859, 3, 0, 589860, 4, 0, 589861, 4, 0, 589862, 4, 0, 589863, 4, 0, 589864, 5, 0, 589871, 3, 0, 589872, 4, 0, 589873, 4, 0, 589874, 4, 0, 589875, 4, 0, 589876, 5, 0, 655369, 6, 0, 655370, 7, 0, 655371, 7, 0, 655372, 7, 0, 655373, 7, 0, 655374, 7, 0, 655375, 7, 0, 655376, 7, 0, 655377, 7, 0, 655378, 7, 0, 655379, 8, 0, 655388, 3, 0, 655389, 4, 0, 655390, 4, 0, 655391, 4, 0, 655392, 4, 0, 655393, 5, 0, 655395, 6, 0, 655396, 7, 0, 655397, 7, 0, 655398, 7, 0, 655399, 7, 0, 655400, 8, 0, 655407, 6, 0, 655408, 7, 0, 655409, 7, 0, 655410, 7, 0, 655411, 7, 0, 655412, 8, 0, 720924, 6, 0, 720925, 7, 0, 720926, 7, 0, 720927, 7, 0, 720928, 7, 0, 720929, 8, 0 )
+
+[node name="Spikes" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1616, 177 )
+
+[node name="Spikes2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1616, 49 )
+
+[connection signal="body_entered" from="Key1" to="Player" method="findsKey1"]
+[connection signal="body_entered" from="Key2" to="Player" method="findsKey2"]
+[connection signal="body_entered" from="Key3" to="Player" method="findsKey3"]
+[connection signal="body_entered" from="Spikes" to="Player" method="onSpikesCollision"]
+[connection signal="body_entered" from="Spikes2" to="Player" method="onSpikesCollision"]
