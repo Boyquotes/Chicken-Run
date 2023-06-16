@@ -29,7 +29,7 @@ func _ready():
 	
 func loadLevel(levelNum):
 	
-	if levelNum < 3:
+	if levelNum < 4:
 		numOfKeys = 0
 		keysFound = [false, false, false]
 		var newLevel = load("res://Levels/Level" + String(curLevel + 1) + ".tscn")
@@ -103,6 +103,7 @@ func _physics_process(_delta):
 		$AnimatedSprite.play("run")
 	else:
 		$AnimatedSprite.play("idle")
+	
 	
 
 #Spikes
